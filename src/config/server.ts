@@ -6,6 +6,7 @@ export default class Server {
   constructor() {
     this.app = express();
     this.port = process.env.PORT ?? "8000";
+    this.bodyParser()
   }
   bodyParser() {
     this.app.use(json());
