@@ -7,8 +7,10 @@
         "rootDir": "./src",
         "outDir": "./dist",
         "moduleResolution": "Node",
-        "esModuleInterop": true,
+        "esModuleInterop": true, //para hacer la importacion de una maera mas facil usando alias para cuando queramos importar toda la libreria
         "removeComments": true,
-        "forceConsistentCasingInFileNames": true
+        "forceConsistentCasingInFileNames": true, //si ponemos el nombre empezando en mayuscula entones al hacer la compilacion respete el nombre del archivo
+        "strictPropertyInitialization": false, //Se pueden crear atributos de clases sin necesidad de inicializarlos en el cosntructor
+        "experimentalDecorators": true, //sirve para utilizar los decoradores de class validatots
     }
 }
